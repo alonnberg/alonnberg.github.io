@@ -10,6 +10,27 @@ const qs = (sel, root) => {
     return (root || document).querySelector(sel);
 }
 
+const toggleType = event => {
+    var typeRow = event.target.closest('tr');
+    typeRow.dataset.view = (typeRow.dataset.view || 'off') == 'off' ? 'on' : 'off' ;
+
+    var types = qsa('toolsum tr');
+    var typesOn = qsa('toolsum tr[data-view="on"]');
+    var typesOnArr = typesOn.reduce(function(arr, typeEl) {
+        arr.push(typeEl.dataset.type);
+        return arr;
+    }, []);
+    var mode = typesOn.length == 0 ? 'all-on' : 'by-type';
+    qsa('toolbox article').forEach(function(tool, i) {
+        var action = mode == 'all-on' || typesOnArr.indexOf(tool.dataset.type) > -1 ? 'on' : 'off';
+        if(action == 'on') {
+            tool.classList.remove('off');
+        } else {
+            tool.classList.add('off');
+        }
+    });
+}
+
 const getDataSum = () => {
     return Array.prototype.reduce.call(document.querySelectorAll('.day .card'), function(dataSum, card) {
         dataSum.type[card.dataset.type] = (dataSum.type[card.dataset.type]||0) +1;

@@ -18,6 +18,20 @@ text-align: center;
     font-family: "myfont", auto;
 }
 
+toolsum table tr:hover {
+    font-weight: 700;
+}
+
+article.card.tool.off {
+    transform: scale(0);
+    width: 0px;
+    height: 0px;
+}
+
+toolsum tr[data-view="on"] {
+    background-color: #888;
+}
+
 .board, toolbox, toolsum {
     display: flex;
     justify-content: center;

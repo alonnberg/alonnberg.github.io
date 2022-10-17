@@ -200,6 +200,7 @@ svg.type-doft  { fill: var(--color-doft) }
                 var tr = document.createElement('tr');
                 const angloType = type.replace(/ö/g, 'o');
                 tr.dataset.type=angloType;
+                tr.onclick=toggleType;
                 tr.className='type-'+angloType;
                 tr.innerHTML = '<td>'+type+'</td><td></td>';
                 qs('toolsum table').appendChild(tr);
