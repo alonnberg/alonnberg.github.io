@@ -57,7 +57,7 @@ article.tool>div {
     width: calc(100% - 20px);
 }
 
-article.tool>div.tool.images {
+article.tool>div.tool-images {
     height: 120px;
     overflow: hidden;  
 }
