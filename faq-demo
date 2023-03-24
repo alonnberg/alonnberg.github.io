@@ -1,0 +1,576 @@
+<style type="text/css">@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/c47696/00000000000000003b9b305e/27/l?subset_id=2&fvd=n1&v=3) format("woff2"),url(https://use.typekit.net/af/c47696/00000000000000003b9b305e/27/d?subset_id=2&fvd=n1&v=3) format("woff"),url(https://use.typekit.net/af/c47696/00000000000000003b9b305e/27/a?subset_id=2&fvd=n1&v=3) format("opentype");font-weight:100;font-style:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/cebe0e/00000000000000003b9b3060/27/l?subset_id=2&fvd=n3&v=3) format("woff2"),url(https://use.typekit.net/af/cebe0e/00000000000000003b9b3060/27/d?subset_id=2&fvd=n3&v=3) format("woff"),url(https://use.typekit.net/af/cebe0e/00000000000000003b9b3060/27/a?subset_id=2&fvd=n3&v=3) format("opentype");font-weight:300;font-style:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/d?subset_id=2&fvd=n4&v=3) format("woff"),url(https://use.typekit.net/af/705e94/00000000000000003b9b3062/27/a?subset_id=2&fvd=n4&v=3) format("opentype");font-weight:400;font-style:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/576d53/00000000000000003b9b3066/27/l?subset_id=2&fvd=n6&v=3) format("woff2"),url(https://use.typekit.net/af/576d53/00000000000000003b9b3066/27/d?subset_id=2&fvd=n6&v=3) format("woff"),url(https://use.typekit.net/af/576d53/00000000000000003b9b3066/27/a?subset_id=2&fvd=n6&v=3) format("opentype");font-weight:600;font-style:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/949f99/00000000000000003b9b3068/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/40ff7f/00000000000000003b9b3061/27/l?subset_id=2&fvd=i3&v=3) format("woff2"),url(https://use.typekit.net/af/40ff7f/00000000000000003b9b3061/27/d?subset_id=2&fvd=i3&v=3) format("woff"),url(https://use.typekit.net/af/40ff7f/00000000000000003b9b3061/27/a?subset_id=2&fvd=i3&v=3) format("opentype");font-weight:300;font-style:italic;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/l?subset_id=2&fvd=i4&v=3) format("woff2"),url(https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/d?subset_id=2&fvd=i4&v=3) format("woff"),url(https://use.typekit.net/af/5c70f2/00000000000000003b9b3063/27/a?subset_id=2&fvd=i4&v=3) format("opentype");font-weight:400;font-style:italic;font-display:auto;}@font-face{font-family:proxima-nova;src:url(https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/l?subset_id=2&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/d?subset_id=2&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/4c4052/00000000000000003b9b3069/27/a?subset_id=2&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-display:auto;}@font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/l?subset_id=2&fvd=n5&v=3) format("woff2"),url(https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/d?subset_id=2&fvd=n5&v=3) format("woff"),url(https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/a?subset_id=2&fvd=n5&v=3) format("opentype");font-weight:500;font-style:normal;font-display:auto;}@font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/d?subset_id=2&fvd=n7&v=3) format("woff"),url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/a?subset_id=2&fvd=n7&v=3) format("opentype");font-weight:700;font-style:normal;font-display:auto;}@font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/1eb35a/000000000000000000010090/27/l?subset_id=2&fvd=i5&v=3) format("woff2"),url(https://use.typekit.net/af/1eb35a/000000000000000000010090/27/d?subset_id=2&fvd=i5&v=3) format("woff"),url(https://use.typekit.net/af/1eb35a/000000000000000000010090/27/a?subset_id=2&fvd=i5&v=3) format("opentype");font-weight:500;font-style:italic;font-display:auto;}@font-face{font-family:futura-pt;src:url(https://use.typekit.net/af/eb729a/000000000000000000010092/27/l?subset_id=2&fvd=i7&v=3) format("woff2"),url(https://use.typekit.net/af/eb729a/000000000000000000010092/27/d?subset_id=2&fvd=i7&v=3) format("woff"),url(https://use.typekit.net/af/eb729a/000000000000000000010092/27/a?subset_id=2&fvd=i7&v=3) format("opentype");font-weight:700;font-style:italic;font-display:auto;}</style>
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+
+<div id="faqOverlay">
+  <div id="faqPopup">
+    <div id="faqInner">
+      <div id="faqHead">
+        <h3 class="head">FAQ</h3>
+        <form id="faqSearchForm" role="search" action="">
+          <span class="fa fa-search"></span>
+          <input type="hidden" name="sc" value="faq">
+          <input type="text" name="s" placeholder="">
+        </form>
+      </div>
+      <div id='faq'><div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>
+    </div>
+  </div>
+</div>
+
+<style>
+.sqs-cookie-banner-v2 + #faqIcon {
+    bottom: 7rem;
+}
+  
+.lds-roller {
+  display: block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+.lds-roller div {
+  animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  transform-origin: 40px 40px;
+}
+.lds-roller div:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #000;
+  margin: -4px 0 0 -4px;
+}
+.lds-roller div:nth-child(1) {
+  animation-delay: -0.036s;
+}
+.lds-roller div:nth-child(1):after {
+  top: 63px;
+  left: 63px;
+}
+.lds-roller div:nth-child(2) {
+  animation-delay: -0.072s;
+}
+.lds-roller div:nth-child(2):after {
+  top: 68px;
+  left: 56px;
+}
+.lds-roller div:nth-child(3) {
+  animation-delay: -0.108s;
+}
+.lds-roller div:nth-child(3):after {
+  top: 71px;
+  left: 48px;
+}
+.lds-roller div:nth-child(4) {
+  animation-delay: -0.144s;
+}
+.lds-roller div:nth-child(4):after {
+  top: 72px;
+  left: 40px;
+}
+.lds-roller div:nth-child(5) {
+  animation-delay: -0.18s;
+}
+.lds-roller div:nth-child(5):after {
+  top: 71px;
+  left: 32px;
+}
+.lds-roller div:nth-child(6) {
+  animation-delay: -0.216s;
+}
+.lds-roller div:nth-child(6):after {
+  top: 68px;
+  left: 24px;
+}
+.lds-roller div:nth-child(7) {
+  animation-delay: -0.252s;
+}
+.lds-roller div:nth-child(7):after {
+  top: 63px;
+  left: 17px;
+}
+.lds-roller div:nth-child(8) {
+  animation-delay: -0.288s;
+}
+.lds-roller div:nth-child(8):after {
+  top: 56px;
+  left: 12px;
+}
+@keyframes lds-roller {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+  
+  
+#faqOverlay .faq-queries {
+  margin-block-start: 0;
+}
+
+#faqOverlay .faq-active .faq-queries {
+  margin-block-start: revert;
+}
+
+.rs-language-box {
+    display: none;
+}  
+  
+#faqOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10000000;
+    display: none;
+}
+  
+#faqOverlay.faq-show {
+    display: block;  
+}
+  
+#faqOverlay #faqInner {
+    color: #20303c;
+    font-family: "PT Serif",Georgia,serif;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 1.6em;
+    font-family: proxima-nova;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 2px;
+    line-height: 1.8em;
+  max-height: 90vh;
+
+}
+  
+#faqOverlay input {
+  border: revert;
+  width: 100%;
+  max-height: 1rem;
+}
+#faqOverlay select {
+  border: 0;
+}
+  
+#faqOverlay #faqInner h3 {
+  float:left;
+  margin: 0px;
+}
+
+#faqOverlay #faq { 
+  overflow-y: auto;
+  max-height: calc(90vh - 8rem);
+  border-radius: 0.5rem;
+  padding: 5rem 2rem 0rem 2rem;
+  background-color: #fff;
+  min-height: 120px;
+}
+
+#faqOverlay #faq > li {
+  list-style-type: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+  
+#faqOverlay #faq li ul {
+    padding: revert;
+    margin-left: revert;
+}  
+
+#faqOverlay #faq > li li {
+  font-weight: 500;
+  font-size: 1.0rem;
+  margin-bottom: 1rem;
+}
+
+#faqOverlay #faq > li li .faq-query {
+  font-weight: 700;
+}
+
+#faqOverlay #faq > li li .faq-answer a {
+  padding: 1em 1.5em;
+  border: 1px solid #888;
+  background-color: #000;
+  color: #FFF;
+  display: table-cell;  
+}
+
+#faqOverlay button {
+  float: left;
+  background-color: #FFF;
+  color: #000;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  font-size: 20px;
+  cursor: pointer;
+  border: 0;
+  outline: 0;
+  padding: 0;
+  margin: 0px;
+}
+#faqOverlay .faq-plus,
+#faqOverlay .faq-minus {
+  color: #000;
+  width: 30px;
+  height: 30px;
+  padding: 3px;
+  line-height: 20px;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  box-sizing: border-box;
+  transition: .5s all ease-out;
+}
+#faqOverlay .faq-plus {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+#faqOverlay .faq-active button .faq-plus {
+  opacity: 0;
+  transform: rotate(90deg);
+}
+#faqOverlay .faq-minus {
+  opacity: 0;
+  transform: rotate(-90deg);
+}
+#faqOverlay .faq-active button .faq-minus {
+  opacity: 1;
+  transform: rotate(0deg);
+}
+
+#faqOverlay .faq-title, #faqOverlay .faq-query, #faqIcon {
+    cursor: pointer;
+}
+
+#faqOverlay .faq-query, #faqOverlay .faq-answer, #faqOverlay .faq-queries li, #faqOverlay .faq-queries, #faqOverlay .faq-active .faq-queries li.faq-hide  {
+    transition: opacity 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+} 
+
+#faqOverlay .faq-active .faq-query, #faqOverlay .faq-active .faq-open .faq-answer {
+    opacity: 1;
+    height: auto;
+} 
+
+#faqOverlay .faq-active .faq-queries li, #faqOverlay .faq-active .faq-queries {
+    opacity: 1;
+    height: auto;
+}
+
+#faqOverlay #faqInner form {
+   margin-right: 1rem;
+   display: flex;
+   flex-direction: row;
+   margin-top: auto;
+   margin-bottom: auto;
+   margin-left: 0.5rem;
+   max-width: 12rem;
+}
+
+#faqIcon {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  font-size: 4rem;
+  color: #fff;
+  filter: drop-shadow(16px 16px 30px black);
+  z-index: 100000002;
+  transition: .1s all ease-out;
+}
+
+#faqIcon:hover {
+  filter: drop-shadow(20px 20px 40px black);
+}  
+
+#faqIcon i:hover {
+  filter: drop-shadow(8px 8px 10px black);
+}  
+  
+  
+#faqIcon i {
+    filter: drop-shadow(2px 4px 6px black);
+  transition: .1s all ease-out;
+}  
+
+#faqOverlay #faqPopup {
+    transition: opacity 1s ease-out;
+    opacity: 0;
+    height: 0;
+    overflow: hidden; 
+    padding: 0rem;
+    border-radius: 0.5rem;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 0px solid black;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+#faqOverlay.faq-show #faqPopup {
+    opacity: 1;
+    height: auto;    
+}
+
+#faqOverlay #faq .fa {
+    color: #000
+    }
+    
+#faqHead {
+    position: fixed;
+    top: 0;
+    left: calc((100% - 500px)/2);
+    right: calc((100% - 500px)/2);
+    max-width: 500px;
+    z-index: 10000001;
+    background-color: #FFF;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    max-height: 5rem;
+    overflow: hidden; 
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 532px) {
+  #faqHead {
+    left: 8px;
+    right: 8px;
+  }
+}
+
+#faqOverlay #faq > li li.faq-hide {
+  margin: 0px;
+}
+
+#faqOverlay .faq-search li.faqCategory {
+    display: none;
+}
+
+#faqOverlay .faq-search li.faqCategory.faq-hit {
+    display: block;
+}
+</style>
+
+<script>
+var activeFAQLang = {{url - lang by uri}} || 'nb';
+var faqHashedData = {};
+
+$(document).ready(function() {
+  $('#faqHead form input').on("keyup", function(val) {
+    searchFAQ();
+  });
+  
+  var sIcon = '<div id="faqIcon"><i class="fa fa-question-circle faq-icon" aria-hidden="true"></i></div>';
+  if($('.sqs-cookie-banner-v2').length) {
+    $('.sqs-cookie-banner-v2').after(sIcon); 
+  } else {
+    $('body').append(sIcon); 
+  }
+
+  $('#faqIcon').on("click", function() {
+    $('#faqOverlay').toggleClass('faq-show');
+    executeFAQTrigger("faq-icon", '[default]', 'FAQ: '+($('#faqOverlay').hasClass('faq-show')?'show':'hide'));
+    getFAQ();
+  });
+  
+  $('#faqOverlay').click(function(e) { if(e.target.id && e.target.id === 'faqOverlay') { $('#faqOverlay').removeClass('faq-show'); } });
+  
+  $('body.has-nav #desktopNav li.folders-collection .folder-parent span, body.has-nav #mobileNav li.folders-collection .folder-parent span').filter(function() {
+    return $(this).text().toLowerCase().match(/^about|om( os+)*$/); 
+  }).parents('.folders-collection').find('.folder-child').append('<li class="faqMenu-open"><a class="faqTrigger faq-menu" onclick="$(\'#faqOverlay\').addClass(\'faq-show\');getFAQ();"><span>FAQ</span></li>');
+  
+  setFAQTriggers();
+  
+  if({{url - query - s}}.length > 2) {
+    $('#faqOverlay').toggleClass('faq-show');
+    $('#faqSearchForm input[name=s]').val({{url - query - s}});
+    getFAQ();
+  }
+});
+
+function searchFAQ() {
+  var searchPart = $('#faqHead form input[name=s]').val().toLowerCase();
+  if (searchPart.length < 3) {
+    var allEl = $('#faq *');
+    $.each(['faq-active', 'faq-hide', 'faq-open','faq-hit'], function(i, v){
+       allEl.removeClass(v);
+    });    
+    $('#faq').removeClass('faq-search');
+  } else {
+    $('#faq').addClass('faq-search');
+    executeFAQTrigger("faq-search-for", searchPart, 'FAQ: filter');
+    
+    $('#faq li.faqCategory').each(function(i, elLi) {
+      var li = $(elLi);
+      var matched = li.text().toLowerCase().indexOf(searchPart) > -1;
+      $.each(['faq-active', 'faq-hit'], function(i, v){
+        li.toggleClass(v, matched);
+      });
+      li.find('.faq-queries li').each(function(k, liFAQ) {
+        var faqMatched = $(liFAQ).text().toLowerCase().indexOf(searchPart) > -1;
+        $(liFAQ).toggleClass('faq-open', faqMatched);
+        $(liFAQ).toggleClass('faq-hide', !faqMatched);
+      });
+    });
+  }
+}
+  
+function setFAQTriggers(src) {
+  $((src?src:"")+'.faqTrigger').on("click", function(e) {
+    var target = e.currentTarget;
+    var name  = target.className.split(/\s+/).filter(function(a) { return a.match(/^faq-/) }).join("");
+    var value = $(target).text().substring(0, 50) || 'default';
+    var type  = 'FAQ: hide';
+    if(target.parentNode.className && target.parentNode.className.match(/(active|open)/)) {
+      type  = 'FAQ: show';
+    }
+    executeFAQTrigger(name, value, type);
+  });  
+}
+    
+function executeFAQTrigger(name, value, type) {
+   dataLayer.push({
+     'event': 'triggerFAQ',
+     'eventCategory': type,
+     'eventAction': name,
+     'eventLabel': value,
+   });
+}
+
+function getFAQ(force) {
+  if(!force && Object.keys(faqHashedData) != 0) {
+    return;   
+  }
+  
+  $('#faq').html('<div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>');
+  
+  $.ajax({
+    type: "GET",
+    url: "https://docs.google.com/spreadsheets/d/e/2PACX-1vQbqT-zie4iJzOc0QbQxDsLHcFLCv-rHSg5YWDNbPTnEyFN1T8Day3iXMc13V9cDm1pxMonEzDyPmWc/pubhtml?single=true&gid=0",
+    dataType: "html",
+    error: function(a, b, c) {
+      console.log(a, b, c, a.responseText)
+    },
+    success: function(dataS) {
+      var cellValues = [];
+      var rowDone = {"": 1};
+      try {
+        t = document.createElement('table');
+        t.innerHTML = dataS.match(/(<table.+?<\/table>)/);
+        cellValues = Array.prototype.reduce.call(t.rows, function(rows, row) {
+          rowData = Array.prototype.reduce.call(row.cells, function(cells, cell) {
+           cells.push(cell.innerText);
+           return cells;
+          }, []);
+          firstCell = rowData[0];
+          if(!rowDone[firstCell]) {
+            rows.push(rowData);
+            rowDone[firstCell]=1;
+          }
+          return rows;
+        }, []);
+      } catch (e) {};
+
+      faqHashedData = cellValues.reduce(function(hashRows, row) {
+        if (!hashRows.head) {
+          hashRows.head = row.map(function(cell) {
+            return cell.toLowerCase().replace(/,.+$|\)/, '').replace(/[^a-z]+/g, '_');
+          });
+
+          hashRows.langs = Object.keys(hashRows.head.reduce(function(langs, headerCol) {
+            var lang = headerCol ? headerCol.match(/^.+_([a-z]{2})$/) : undefined;
+            if (lang) {
+              langs[lang[1]] = 1;
+            }
+            return langs;
+          }, {}));
+
+          if (hashRows.langs.length > 1) {
+            $('#faqHead form select').remove();
+
+            $('#faqHead form').append('<select class="faqTrigger faq-lang" name="lang">' +
+              hashRows.langs.map(function(lang) {
+                return '<option value="' + lang + '"' + (lang == activeFAQLang ? ' selected' : '') + '>' + lang + '</option>';
+              }) +
+              '</select>');
+
+            $('#faqHead form select').on("change", function(val) {
+              activeFAQLang = this.value;
+              getFAQ(true);
+            });
+          }
+        } else {
+          var hashRow = row.reduce(function(hashedRow, cell, offset) {
+            hashedRow[hashRows.head[offset]] = cell;
+            return hashedRow;
+          }, {});
+          if (
+            hashRow['enabled'] !== 'No' &&
+            hashRow['category_' + activeFAQLang] && hashRow['category_' + activeFAQLang].length > 2 &&
+            hashRow['question_' + activeFAQLang] && hashRow['question_' + activeFAQLang].length > 2 &&
+            hashRow['answer_' + activeFAQLang] && hashRow['answer_' + activeFAQLang].length > 2
+          ) {
+            if (!hashRows.categories[hashRow['category_' + activeFAQLang]]) {
+              hashRows.categories[hashRow['category_' + activeFAQLang]] = [];
+            }
+            hashRows.categories[hashRow['category_' + activeFAQLang]].push(hashRow);
+          }
+        }
+        return hashRows;
+      }, {
+        head: undefined,
+        langs: {},
+        categories: {}
+      });
+
+      $('#faq').html('');
+
+      Object.keys(faqHashedData.categories).forEach(function(faqCategory) {
+        var faqEntries = faqHashedData.categories[faqCategory].reduce(function(s, faqEntry) {
+          s += '     <li>\n         <div class="faqTrigger faq-query">' + faqEntry['question_' + activeFAQLang] + "</div>\n";
+          s += '         <div class="faqTrigger faq-answer">' + faqEntry['answer_' + activeFAQLang];
+          if (faqEntry['link_text_' + activeFAQLang]) {
+            s += '<a href="' + faqEntry['link_' + activeFAQLang] + '">' + faqEntry['link_text_' + activeFAQLang] + '</a>';
+          }
+          s += "</div>\n     </li>\n";
+          return s;
+        }, '  <ul class="faq-queries">' + "\n");
+
+        var s = '<li class="faqCategory">' + "\n" + '  <div class="faqTrigger faq-title"><button><span class="faq-plus"><i class="fa fa-plus"></i></span><span class="faq-minus"><i class="fa fa-minus"></i></span></button><div>' + faqCategory + "</div></div>\n" + faqEntries + "\n  </ul>\n</li>\n";
+        $('#faq').append(s);
+      });
+
+      $('#faq .faqCategory .faq-title').on("click", function() {
+        $(this).parent('.faqCategory').toggleClass('faq-active');
+      });
+
+      $('#faq .faqCategory .faq-query').on("click", function() {
+        $(this).parent('li').toggleClass('faq-open');
+      });
+
+      if({{url - lang by uri}} !== '') {
+        $('#faqHead form select').hide();
+      }
+      setFAQTriggers("#faqHead form select, #faq ");
+      
+      searchFAQ();
+    }
+  });
+}
+</script>
